@@ -12,6 +12,12 @@ $contacts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?= template_header('Contacts') ?>
 <?= template_nav() ?>
 
+<?php
+if (isset($_GET['type'])) {
+    $_GET['type'] = 'right' ? (right($_GET['msg'])) : (danger($_GET['msg']));
+}
+?>
+
     <!-- START PAGE CONTENT -->
     <h1 class="title">Contacts</h1>
     <p>Welcome, view our contacts below.</p>
