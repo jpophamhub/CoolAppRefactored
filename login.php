@@ -34,6 +34,18 @@ require 'config.php';
                 </button>
             </p>
         </div>
+          <a href="login.php" class="button">
+    <span class="icon"><i class="fas fa-address-book"></i></span>
+    <span>Sign Up</span>
+  </a>
+  <a href="login.php" class="button">
+    <span class="icon"><i class="fas fa-key"></i></span>
+    <span>Forgot Password</span>
+  </a>
+  <a href="login.php" class="button">
+    <span class="icon"><i class="fas fa-question"></i></span>
+    <span>Need Help</span>
+  </a>
     </form>
     <!-- END PAGE CONTENT -->
 
