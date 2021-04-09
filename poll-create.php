@@ -25,7 +25,7 @@ if(!empty($_POST)) {
         $stmt = $pdo->prepare('INSERT INTO poll_answers VALUES (NULL, ?, ?, 0)');
         $stmt->execute([$poll_id, $answer]);
     }
-    $msg = "Poll created successfully!";
+    redirect('polls.php', 'You have created the Poll', 'right');
 }
 
 ?>
