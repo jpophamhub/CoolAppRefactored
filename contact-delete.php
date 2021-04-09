@@ -23,7 +23,7 @@ if (isset($_GET['id']))
             $stmt = $pdo->prepare('DELETE FROM contacts WHERE id = ?');
             $stmt -> execute([$_GET['id']]);
             //output message
-            $msg = 'You have deleted the contact!';
+            redirect('contacts.php', 'You have deleted the Contact!', 'right');
         }
         else
         {
@@ -36,7 +36,7 @@ if (isset($_GET['id']))
 }
 else
 {
-    die ('No ID specified.');
+    redirect('contacts.php', 'No ID Specified', 'wrong');
 }
 
 
