@@ -32,10 +32,10 @@ if (isset($_GET['id'])) {
             exit;
         }
     }else {
-        die('Poll with that ID does not exist.');
+        redirect('polls.php', 'Poll with that ID does not exist.', 'danger');
     }
 }else{
-    die ('No poll ID specified');
+    redirect('polls.php', 'No ID Specified', 'danger');
 }
 
 
