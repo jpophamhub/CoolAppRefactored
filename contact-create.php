@@ -21,7 +21,7 @@ if(!empty($_POST)) {
 
     
 
-    $msg = "Contact created successfully!";
+    redirect('contacts.php', 'Contact created successfully!', 'right');
 }
 
 ?>
