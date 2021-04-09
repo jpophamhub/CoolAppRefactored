@@ -111,17 +111,21 @@ echo <<<EOT
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                <a href="profile.php" class="button">
+                <a href="index.php" class="button">
                   <span class="icon"><i class="fas fa-user"></i></span>
-                  <span>Profile</span>
+                  <span>Home</span>
                 </a>
-                <a href="#" class="button">
+                <a href="contact.php" class="button">
                   <span class="icon"><i class="fas fa-address-book"></i></span>
-                  <span>Button</span>
+                  <span>Contact Us</span>
+                </a>
+                <a href="login.php" class="button">
+                  <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                  <span>Login</span>
                 </a>
                 <a href="logout.php" class="button">
                   <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
-                  <span>Sign Out</span>
+                  <span>Logout</span>
                 </a>
               </div>
             </div>
