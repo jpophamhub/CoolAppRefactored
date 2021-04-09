@@ -14,6 +14,12 @@ $polls = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?= template_header('Polls') ?>
 <?= template_nav() ?>
 
+<?php
+if (isset($_GET['type'])) {
+    $_GET['type'] = 'success' ? (right($_GET['msg'])) : (danger($_GET['msg']));
+}
+?>
+
 <div class = "columns" >
 <!-- START LEFT NAV COLUMN-->
 <div class = "column is-one-quarter" >
