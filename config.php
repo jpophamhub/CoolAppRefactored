@@ -20,6 +20,37 @@ function pdo_connect_mysql() {
    $DATABASE_PASS = 'Andrewcs!'; //put password
    $DATABASE_NAME = 'W01182769'; // wnumber
 
+  function right($message)
+{
+  echo <<<EOT
+    <div class="notification is-success">
+      <h2 class="title is-2">
+  EOT;
+  echo $message;
+  echo <<<EOT
+      </h2>
+    </div>
+EOT;  
+}
+
+function wrong($message)
+{
+  echo <<<EOT
+  <div class="notification is-danger">
+  <h2 class="title is-2">
+  EOT;
+  echo $message;
+  echo <<<EOT
+      </h2>
+  <div>
+EOT;  
+}
+
+function redirect($location, $msg)
+{
+  header('Location: ' . $location . '?msg=' . $msg . '&type=' . $type);
+}
+  
    //db connection
    try {
      return new PDO(
